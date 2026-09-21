@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-dark-950 text-slate-100 antialiased selection:bg-cyan-500 selection:text-black font-sans;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom Tactical Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0d111a;
+}
+::-webkit-scrollbar-thumb {
+  background: #222f47;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #344565;
+}
+
+/* Tactical HUD border glow effects */
+.hud-card {
+  @apply bg-dark-900/90 border border-slate-800/80 rounded-xl p-4 shadow-xl backdrop-blur-md transition-all duration-200 hover:border-slate-700;
+}
+
+.hud-panel {
+  @apply bg-dark-850/90 border border-slate-800 rounded-lg p-3;
+}
+
+.glow-cyan {
+  box-shadow: 0 0 15px rgba(0, 240, 255, 0.15);
+}
+
+.glow-rose {
+  box-shadow: 0 0 15px rgba(244, 63, 94, 0.2);
+}
