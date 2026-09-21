@@ -1,0 +1,12 @@
+# Aeronex Backend — Railway Production Requirements
+# NOTE: ultralytics/torch omitted on cloud — system auto-falls-back to SIMULATED AI mode.
+# For local development with real YOLO inference, see requirements.txt
+fastapi>=0.110.0
+uvicorn[standard]>=0.28.0
+pydantic>=2.6.0
+pydantic-settings>=2.2.0
+sqlalchemy>=2.0.28
+websockets>=12.0
+numpy>=1.24.0,<2.0.0
+opencv-python-headless>=4.8.0.74
+python-multipart>=0.0.9
